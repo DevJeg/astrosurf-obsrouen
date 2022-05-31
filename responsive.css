@@ -1,0 +1,47 @@
+@media (max-width: 1200px) {
+    #bot{
+        flex-direction: column;
+    }
+    .part{
+        align-items: center;
+    }
+    #agenda{
+        display: none;
+    }
+    #map{
+        display: none;
+    }
+    #center{
+        width: 100%;
+    }
+    #deroulant{
+        display: flex;
+        justify-content: center;
+    }
+    section{
+        width: 500px;
+    }
+    #center{
+        margin-top: 50px;
+    }
+    #left{
+        margin-top: 50px;
+    }
+    #right{
+        margin-top: 50px;
+    }
+    .news{
+        width: 300px;
+    }
+    #reste{
+      width: 98%;
+      text-align: center;
+      padding: 5px;
+    }
+}
+
+@media (max-width: 500px) {
+    section{
+        width: 99%;
+    }
+}

@@ -1,0 +1,49 @@
+
+@media (max-width: 1000px) {
+    .pic{
+        width: 100%;
+    }
+    .team-row{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .team-block{
+        width: 50%;
+    }
+}
+@media (max-width:870px){
+    .row2{
+        flex-direction: column;
+        align-items: center;
+    }
+    .leftside{
+        width: 500px;
+    }
+}
+
+@media (max-width: 600px) {
+    .row{
+        flex-direction: column;
+    }
+    .smallpart{
+        width: auto;
+    }
+    #carouselintro{
+        display: none;
+    }
+    #carouselsec{
+        display: none;
+    }
+    #nav{
+        flex-direction: column;
+        height: fit-content;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 550px) {
+    .phototeam{
+        width: 150px;
+        height: 150px;
+    }
+}

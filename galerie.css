@@ -1,0 +1,240 @@
+
+body{
+    display: flex;
+    flex-direction: column;
+    /*background-color: rgb(25, 25, 112);*/
+    /*background-image: url(https://c.tenor.com/XmSnrVtCcAIAAAAd/planet-rotating.gif);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin: auto;*/
+    color: black;   
+    
+}
+.part{
+    display: flex;
+    flex-direction: row;
+    
+    justify-content: space-between;
+}
+#center{
+    margin-left: 300px;
+}
+#presentation{
+    border-bottom-left-radius: 10px;
+}
+#eventAstro{
+    border-bottom-right-radius: 10px;
+    border-right: none;
+}
+#bot{
+    min-height: 500px;
+    margin-top: 120px;
+    z-index: 1;
+}
+#agenda{
+    height: 250px;
+    width: 300px;
+    background-color: #191925;
+    color: #1096d1;
+    position: fixed;
+}
+#deroulant{
+    height: 250px;
+    width: 500px;
+}
+#reste{
+    height: 250px;
+    width: 500px;
+}
+#event{
+    height: 300px;
+    width: 300px;
+    position: fixed;
+    margin-top: 300px;
+}
+#right{
+    height: 300px;
+    width: 300px;
+}
+#left{
+    display: flex;
+    flex-direction: column;
+}
+#news{
+    background-color: grey;
+    color: white;
+    border-radius: 10px;
+    height: 300px;
+    position: fixed;
+    width: 260px;
+}
+#news1{
+    background-color: black;
+    border-radius: 10px;
+    margin-top: 5px;
+    
+}
+.newspart{
+    border-bottom: solid black;
+    min-height: 50px;
+}
+
+#bot{
+  color: black;
+}
+
+#h2{
+  color:#191925;
+}
+#ephemeride{
+  color: black;
+}
+#map{
+    height: 300px;
+    width: 300px;
+    position: fixed;
+    margin-top: 300px;
+
+}
+
+#mapContainer{
+  border-radius: 10px;
+}
+
+.block-body {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.block-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2px;
+    height: 275px;
+}
+
+.block-block {
+    display: flex;
+    flex-direction: row;
+    background-color : white;
+    border-radius: 1%;
+    border: rgb(138, 138, 138) solid;
+    width: 30%;
+    margin: 2%;
+}
+
+
+#sun{
+    background-image: url(./img/galerie\ sheet/sun.jpg);
+    background-size: cover;
+}
+
+#moon{
+    background-image: url(./img/galerie\ sheet/moon.jpg);
+    background-size: cover;
+    /* background-position: right -100px top; */  
+}
+
+#comet{
+    background-image: url(./img/galerie\ sheet/comet.jpg);
+    background-size: cover;
+}
+
+#planet{
+    background-image: url(./img/galerie\ sheet/planet.jpg);
+    background-size: cover;
+}
+
+#galaxy{
+    background-image: url(./img/galerie\ sheet/galaxy.jpg);
+    background-size: cover;
+}
+
+#nebula{
+    background-image: url(./img/galerie\ sheet/nebula.jpg);
+    background-size: cover;
+}
+
+
+#amasetoiles{
+    background-image: url(./img/galerie\ sheet/star-cluster.jpg);
+    background-size: cover;
+}
+
+#etoilesdoubles{
+    background-image: url(./img/galerie\ sheet/doublestar.jpg);
+    background-size: cover; 
+}
+
+
+#eclipselune{
+    background-image: url(./img/galerie\ sheet/eclipselune.jpg);
+    background-size: cover; 
+}
+
+#eclipsesoleil{
+    background-image: url(./img/galerie\ sheet/eclipsesolaire.jpg);
+    background-size: cover; 
+}
+
+#phenomenes{
+    background-image: url(./img/galerie\ sheet/phenomene.jpg);
+    background-size: cover; 
+}
+
+
+.block-text{
+    display: flex;
+    flex-direction: column;    
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    background-color:  rgb(220, 118, 51);
+    width: 33%;
+    opacity: 0.95;
+    transition: 1s;
+}
+
+.block-plus{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    color: white;
+    background-color: grey;
+    width: 9%; 
+    opacity: 0.65;
+    transition: 1s;
+
+}
+.block-block:hover{
+    border: rgb(255, 255, 255) solid;
+}
+.block-plus:hover{
+    width: 65%;
+    padding-right: 10px;
+}
+.block-plus:hover .text-hover{
+    display: block;
+    text-align: center;
+    width: 50%;
+}   
+
+.text-hover{
+    display: none;
+    transition: 1s;
+}
+
+.icon {
+    width: 35px;
+    height: 35px;
+    padding-left: 20%;
+}

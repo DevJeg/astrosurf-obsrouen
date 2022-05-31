@@ -1,0 +1,20 @@
+.structure {
+    height: 800px;
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.titr{
+    justify-content: center;
+}
+
+.contenu{
+    justify-content: center;
+
+}
+#bot{
+  padding: 25px;
+}

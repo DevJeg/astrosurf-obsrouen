@@ -1,0 +1,40 @@
+.structur{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: fit-content;
+    min-height: 500px;
+}
+
+.contenu{
+    margin-top: 50px;  
+}
+
+.contenu2{
+    width: 50%;
+    
+}
+
+#mail{
+    margin-bottom: 5px;
+    height: 25px;
+}
+
+#msg{
+    height: 150px;
+    width: 164px;
+}
+
+#formulaire{    
+    max-width:250px;
+
+
+}
+
+#sousligne{
+    text-align: center;
+}
+
+#bouton{
+}

@@ -1,0 +1,459 @@
+body{
+    color: white;
+}
+header{
+    z-index: 1;
+}
+#bot{
+    display: flex;
+    flex-direction: column;
+    z-index: 0;
+    height: fit-content;
+}
+
+#nav{
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    gap: 75px;
+    justify-content: center;
+    align-items: center;
+}
+
+#corps{
+    height: fit-content ;
+}
+
+.onglet-nav{
+    /*background-color: rgb(10, 10, 97);*/
+    padding: 4px;
+    width: 250px;
+    text-align: center;
+    display: flex;
+    border: none;
+    height: 40px;
+    font-weight: bold;
+    font-variant: small-caps;
+    align-items: center;
+    justify-content: space-around;
+    border: solid white;
+    border-radius: 5px;
+    transition: 0.8s;
+}
+.onglet-nav:hover{
+    background-color: darkgrey;
+    opacity: 0.9;
+    border: solid rgba(0, 0, 0, 0);
+    
+}
+
+.onglet-actif{
+    
+    background-color: darkgrey;
+    opacity: 0.9;
+    border: solid rgba(0, 0, 0, 0);
+
+}
+
+.page-nav{
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    clear: both;
+}
+
+
+.photo{
+    width: 40%;
+    border-radius: 5px;
+    margin-top: 25px;
+    margin-bottom: 50Px;
+}
+
+#page-hist{
+    display: none;
+}
+
+#page-membres{
+    display: none;
+}
+
+.row{
+    width: 100%;
+    padding-top: 5px;
+    display: flex;
+    flex-direction: row;
+}
+
+.smallpart{
+    width: 40%;
+    display: flex;
+    align-items: center;    
+    justify-content: center;
+    flex-direction: column;
+    padding: 25px;
+}
+
+.bigpart{
+    width: 60%;
+    padding: 25px;
+
+}
+
+.pic{
+    border-radius: 5px;
+}
+
+
+
+
+/* MEMBRES */
+
+#team-body{
+    width: 100%;
+    height: 100%;
+}
+
+.team-row{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.team-block{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.prenom{
+    font-variant: small-caps;
+    font-size: large    ;
+}       
+.poste{
+    font-weight: bold;
+    font-variant: small-caps;
+    font-size: medium;
+    color: cyan;
+}
+.texte{
+    font-size: xx-small;
+    font-stretch: ultra-condensed;
+
+}
+
+.phototeam{
+    width: 250px;
+    height: 250px;
+    border-radius: 5px;
+    margin-top: 25px;
+    margin-bottom: 15Px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.team-row{
+
+}
+
+.effet{
+    background-color: #80808000;
+    opacity: 0.90;
+    height: 85%;
+    width: 85%;
+    transition: 0.7s;
+    color: rgba(255, 255, 255, 0);
+    display: flex;
+    align-items: center;
+
+
+}
+
+.effet:hover {
+    background-color: #808080b3;
+    border: solid lightgray;
+    opacity: 0.90;
+    height: 85%;
+    width: 85%;
+    color:white;
+    font-size: small;
+} 
+
+#eric{
+    background-image: url(./img/team/eric.jpg)
+}
+
+#roger{
+    background-image: url(./img/team/roger.jpg)
+}
+
+#valere{
+    background-image: url(./img/team/valere.jpg)
+}
+
+#jcd{
+    background-image: url(./img/team/jcd.jpg)
+}
+
+#cecile{
+    background-image: url(./img/team/cecile.jpg)
+}
+
+#guy{
+    background-image: url(./img/team/guy.jpg)
+}
+
+#aymeric{
+    background-image: url(./img/team/aymeric.jpg)
+}
+
+#marwane{
+    background-image: url(./img/team/marwane.jpg)
+}
+
+#pascal{
+    background-image: url(./img/team/pascal.jpg)
+}
+
+#jp{
+    background-image: url(./img/team/jp.jpg)
+}
+
+#christiane{
+    background-image: url(./img/team/christiane.jpg)
+}
+
+#daniel{
+    background-image: url(./img/team/daniel.jpg)
+}
+
+#michel{
+    background-image: url(./img/team/michel.jpg)
+}
+
+#pascalb{
+    background-image: url(./img/team/pascalb.jpg)
+}
+
+#patrick{
+    background-image: url(./img/team/patrick.jpg)
+}
+
+#silhouette{
+    background-image: url(./img/team/silhouette.jpg)
+}
+
+p{
+    margin: 7px 0px;
+}
+
+/*       FOOTER           */
+
+  
+  .footer-distributed{
+      background: #444;
+      box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+      box-sizing: border-box;
+
+      width: 100%;
+      height: 140px;
+      font: bold 16px sans-serif;
+      text-align: left;
+      padding: 5px ;
+      margin: 0;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+  }
+  
+  section {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 700;
+    text-decoration: underline;
+  }
+  
+  
+  /* Footer left */
+  
+  .footer-distributed .footer-left{
+      text-align: center;
+  }
+  
+  /* The company logo */
+  
+  .footer-distributed h3{
+      color:  #ffffff;
+      font: normal 36px 'Roboto', cursive;
+      margin: 0 0 10px;
+  }
+  
+  .footer-distributed h3 span{
+      color:  #5383d3;
+  }
+  
+  /* Footer links */
+  
+  .footer-distributed .footer-links{
+      color:  #ffffff;
+      margin: 0 0 10px;
+      padding: 0;
+  }
+  
+  .footer-distributed .footer-links a{
+      display:inline-block;
+      line-height: 1.8;
+      text-decoration: none;
+      color:  inherit;
+  }
+  
+  .footer-distributed .footer-company-name{
+      color:  #8f9296;
+      font-size: 14px;
+      font-weight: normal;
+      margin: 0;
+  }
+  
+  /* Footer social icons */
+  
+  .footer-distributed .footer-icons{
+      margin-top: 40px;
+  }
+  
+  .footer-distributed .footer-icons a{
+      display: inline-block;
+      width: 35px;
+      height: 35px;
+      cursor: pointer;
+      background-color:  #33383b;
+      border-radius: 2px;
+  
+      font-size: 20px;
+      color: #ffffff;
+      text-align: center;
+      line-height: 35px;
+  
+      margin-right: 3px;
+      margin-bottom: 5px;
+  }
+  
+  /* Footer Right */
+  
+  .footer-distributed .footer-right{
+      float: right;
+  }
+  
+  .footer-distributed .footer-right p{
+      display: inline-block;
+      vertical-align: top;
+      margin: 15px 42px 0 0;
+      color: #ffffff;
+  }
+  
+  /* The contact form */
+  
+  .footer-distributed form{
+      display: inline-block;
+  }
+  
+  .footer-distributed form input,
+  .footer-distributed form textarea{
+      display: block;
+      border-radius: 3px;
+      box-sizing: border-box;
+      background-color:  #1f2022;
+      box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
+      border: none;
+      resize: none;
+  
+      font: inherit;
+      font-size: 14px;
+      font-weight: normal;
+      color:  #d1d2d2;
+  
+      width: 400px;
+      padding: 18px;
+  }
+  
+  .footer-distributed form input{
+      height: 55px;
+      margin-bottom: 15px;
+  }
+  
+  .footer-distributed form textarea{
+      height: 100px;
+      margin-bottom: 20px;
+  }
+  
+  .footer-distributed form button{
+      border-radius: 3px;
+      background-color:  #33383b;
+      color: #ffffff;
+      border: 0;
+      padding: 15px 50px;
+      font-weight: bold;
+      float: right;
+  }
+  
+  /* If you don't want the footer to be responsive, remove these media queries */
+  
+  @media (max-width: 1000px) {
+  
+      .footer-distributed {
+          font: bold 14px sans-serif;
+      }
+  
+      .footer-distributed .footer-company-name{
+          font-size: 12px;
+      }
+  
+      .footer-distributed form input,
+      .footer-distributed form textarea{
+          width: 250px;
+      }
+  
+      .footer-distributed form button{
+          padding: 10px 35px;
+      }
+  
+  }
+  
+  @media (max-width: 800px) {
+  
+      .footer-distributed{
+          padding: 30px;
+      }
+  
+      .footer-distributed .footer-left,
+      .footer-distributed .footer-right{
+          float: none;
+          max-width: 300px;
+          margin: 0 auto;
+      }
+  
+      .footer-distributed .footer-left{
+          margin-bottom: 40px;
+      }
+  
+      .footer-distributed form{
+          margin-top: 30px;
+      }
+  
+      .footer-distributed form{
+          display: block;
+      }
+  
+      .footer-distributed form button{
+          float: none;
+      }
+  }

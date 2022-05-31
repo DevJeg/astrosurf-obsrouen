@@ -1,0 +1,20 @@
+@media (max-width: 942px) {
+  #planet{
+    width: 700px;
+    height: 200px;
+  }
+}
+@media (max-width: 700px) {
+  #planet{
+    width: 500px;
+    height: 150px;
+  }
+}
+@media (max-width: 450px) {
+  #rowtache{
+    display: none;
+  }
+  #row2tache{
+    display: none;
+  }
+}

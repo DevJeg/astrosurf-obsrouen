@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="La description du site internet">
+    <title>Astrosurf</title>
+    <link rel="icon" type="image/png" href="./img/logo.png">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./test.css">
+    <link rel="stylesheet" href="./responsive.css">
+
+</head>
+
+
+<body>
+  <header id="header">
+    <div class="part" id="top">
+        <div id="top1">
+            <div class="onglet" onclick="location.href = './index.html';" id="logo"></div>
+            <div class="onglet" id="presentation" onclick="location.href='./presentation.html';">Observatoire</div>
+            <div class="onglet" onclick="location.href='./article.html';">Article</div>
+            <div class="onglet" onclick="location.href='./galerie.html';">Galerie</div>
+            <div class="onglet" id="eventAstro" onclick="location.href='./event.html';">Evenements Astronomiques</div>
+        </div>
+        <div id="top2">
+            <p id="titre"><b>Observatoire de Rouen</b></p>
+        </div>
+    </div>
+  </header>
+    <div class="part" id="bot">
+        <div id="left">
+            <div class id="agenda">
+
+                <div class="container">
+                    <div class="cal">
+
+                        <table class="cal-table">
+                            <caption class="cal-caption">
+                                Janvier 2022
+                            </caption>
+                            <tbody class="cal-body">
+                                <tr>
+                                    <td class="call-off"><a href="#"></a>lun</td>
+                                    <td class="call-off"><a href="#"></a>mar</td>
+                                    <td class="call-off"><a href="#"></a>mer</td>
+                                    <td class="call-off"><a href="#"></a>jeu</td>
+                                    <td class="call-off"><a href="#"></a>ven</td>
+                                    <td class="call-off"><a href="#"></a>sam</td>
+                                    <td class="call-off"><a href="#"></a>di</td>
+                                </tr>
+                                <tr>
+                                    <td class="cal-off"><a href="#">27</a></td>
+                                    <td class="cal-off"><a href="#">28</a></td>
+                                    <td class="cal-off"><a href="#">29</a></td>
+                                    <td class="cal-off"><a href="#">30</a></td>
+                                    <td class="cal-off"><a href="#">31</a></td>
+                                    <td><a href="#" onclick="calday(1);">1</a></td>
+                                    <td class="cal-check"><a href="#" onclick="calday(2);">2</a></td>
+                                </tr>
+                                <tr>
+                                    <td class="cal-today"><a href="#" onclick="calday(3);">3</a></td>
+                                    <td><a href="#" onclick="calday(4);">4</a></td>
+                                    <td><a href="#" onclick="calday(5);">5</a></td>
+                                    <td><a href="#" onclick="calday(6);">6</a></td>
+                                    <td><a href="#" onclick="calday(7);">7</a></td>
+                                    <td><a href="#" onclick="calday(8);">8</a></td>
+                                    <td class="cal-check"><a href="#" onclick="calday(9);">9</a></td>
+
+                                </tr>
+                                <tr>
+                                    <td><a href="#" onclick="calday(10);">10</a></td>
+                                    <td><a href="#" onclick="calday(11);">11</a></td>
+                                    <td><a href="#" onclick="calday(12);">12</a></td>
+                                    <td><a href="#" onclick="calday(13);">13</a></td>
+                                    <td><a href="#" onclick="calday(14);">14</a></td>
+                                    <td><a href="#" onclick="calday(15);">15</a></td>
+                                    <td><a href="#" onclick="calday(16);">16</a></td>
+
+                                </tr>
+                                <tr>
+                                    <td class="cal-check"><a href="#" onclick="calday(17);">17</a></td>
+                                    <td><a href="#" onclick="calday(18);">18</a></td>
+                                    <td class="cal-selected"><a href="#" onclick="calday(19);">19</a></td>
+                                    <td><a href="#" onclick="calday(20);">20</a></td>
+                                    <td><a href="#" onclick="calday(21);">21</a></td>
+                                    <td><a href="#" onclick="calday(22);">22</a></td>
+                                    <td><a href="#" onclick="calday(23);">23</a></td>
+
+                                </tr>
+                                <tr>
+                                    <td><a href="#" onclick="calday(24);">24</a></td>
+                                    <td class="cal-check"><a href="#" onclick="calday(25);">25</a></td>
+                                    <td><a href="#" onclick="calday(26);">26</a></td>
+                                    <td><a href="#" onclick="calday(27);">27</a></td>
+                                    <td><a href="#" onclick="calday(28);">28</a></td>
+                                    <td><a href="#" onclick="calday(29);">29</a></td>
+                                    <td><a href="#" onclick="calday(30);">30</a></td>
+
+                                </tr>
+                                <tr>
+                                    <td><a href="#" onclick="calday(31);">31</a></td>
+                                    <td class="cal-off"><a href="#">1</a></td>
+                                    <td class="cal-off"><a href="#">2</a></td>
+                                    <td class="cal-off"><a href="#">3</a></td>
+                                    <td class="cal-off"><a href="#">4</a></td>
+                                    <td class="cal-check cal-off"><a href="#" onclick="calday(52);">5</a></td>
+                                    <td class="cal-off"><a href="#">6</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div id="text">Cliquez sur le jour pour voir l'évènement</div>
+            </div>
+            <div class="news">
+                <h1 class="news1">Évènements</h1>
+                <div class="newspart"><u>Samedi 5 Février 21h35</u> :<br> Séance public uniquement sur réservation par mail. Passe sanitaire obligatoire. Masque obligatoire à l'intérieur du local.<br><br> Entrée: 5 € en individuel, 10 € par famille (quel que soit le nombre de personnes).</div>
+                <div class="newspart">Ici on va écrire une 2ème</div>
+            </div>
+        </div>
+        <div id="center">
+            <div id="deroulant">
+                <section id="section1">
+                    <div class="container2">
+                        <div class="carousel">
+                            <input type="radio" name="slides" checked="checked" id="slide-1">
+                            <input type="radio" name="slides" id="slide-2">
+                            <input type="radio" name="slides" id="slide-3">
+                
+                            <ul class="carousel__slides">
+                                <li class="carousel__slide">
+                                    <figure>
+                                        <div>
+                                            <img src="https://i.pinimg.com/564x/34/d7/28/34d728727969f3b2d9979f64f3e8bb36.jpg" alt="">
+                                        </div>
+                                        <figcaption>
+                               <a class="onglet" target="_blank" href='./save/eclsol100621.pdf'>Article PDF</a>
+                               Eclipse  partielle  de  soleil  en Europe, le jeudi 10 juin 2021
+                                            <span class="credit">Article de Roger Marical</span>
+                                        </figcaption>
+                                    </figure>
+                                </li>
+                                <li class="carousel__slide">
+                                    <figure>
+                                        <div>
+                                            <img src="https://i.pinimg.com/564x/88/7c/c8/887cc8cbe9efa849f97b21997f07219c.jpg" alt="">
+                                        </div>
+                                        <figcaption>
+                                           <a class="onglet" target="_blank" href='./save/pmds111119.pdf'>Article PDF</a>
+                                            Passage de Mercure devant le Soleil,  le lundi 11 novembre 2019
+                                            <span class="credit">Article de Roger Marical</span>                            
+                                        </figcaption>
+                                    </figure>
+                                </li>
+                                <li class="carousel__slide">
+                                    <figure>
+                                        <div>
+                                            <img src="https://i.pinimg.com/564x/60/9f/89/609f897563d74361a1b8843b1cc36031.jpg" alt="">
+                                        </div>
+                                        <figcaption>
+                                           <a class="onglet" target="_blank" href='./save/ecl160719.pdf'>Article PDF</a>
+                                            Eclipse partielle de Lune, le mardi 16 juillet 2019
+                                            <span class="credit">Article de Roger Marical</span>                            
+                                        </figcaption>
+                                    </figure>
+                                </li>
+                                
+                               
+                            </ul>    
+                            <ul class="carousel__thumbnails">
+                                <li>
+                                    <label for="slide-1"><img src="https://i.pinimg.com/564x/34/d7/28/34d728727969f3b2d9979f64f3e8bb36.jpg" alt=""></label>
+                                </li>
+                                <li>
+                                    <label for="slide-2"><img src="https://i.pinimg.com/564x/88/7c/c8/887cc8cbe9efa849f97b21997f07219c.jpg" alt=""></label>
+                                </li>
+                                <li>
+                                    <label for="slide-3"><img src="https://i.pinimg.com/564x/60/9f/89/609f897563d74361a1b8843b1cc36031.jpg" alt=""></label>
+                                </li>
+                
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div id="reste">
+                
+              <h2>Bienvenue sur le site de l'Observatoire Astronomique de Rouen,</h2> 
+              association animée uniquement par des bénévoles, reconnue d'intérêt général, <br>
+              agréée Jeunesse et Education Populaire et soutenue par la Ville de Rouen. <br><br><br>
+
+              Devenez un membre de l'Observatoire de Rouen afin de participer à nos réunions hebdomadaires<br>
+              le samedi soir à partir de 21h 30 ( si la météo le permet, observation du observations du ciel,<br>
+               exposés et discussions ouverte sur différent thème de astronomie)<br><br><br>
+              
+
+              <h2>Séance d'ouverture au public</h2>
+              Entrée lors des portes ouvertes uniquement sur réservation par mail. <br>
+              Passe sanitaire obligatoire pour les personnes agées de 12ans et plus .<br>
+              Masque obligatoire à l'intérieur du local de l'observatoire. <br>
+                Prix :<br>
+                    Entrée individuel : 5€<br>
+                    Entrée famille : 10 €
+            </div>
+        </div>
+        <div id="right">
+            <div class="news">
+                <h1 class="news1">Nouveautés</h1>
+                <div class="newspart">
+                    Merci de consulter ci-dessous notre demande de dons déductibles des impôts :<br>
+                    <a class="onglet" target="_blank" href='./pdf/demandededons.pdf'>Demande de dons</a>
+                </div>
+                <div class="newspart">Beaucoup de nouvelles images, en particulier de la Lune, du Soleil, des planètes, des comètes  et du ciel profond</div>
+                <div class="newspart">Un tout nouveau site</div>
+            </div>
+            <div id="map">
+                <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1nrXOjePyhnYgdSC_gzybKecwYLi-L8Dt&ehbc=2E312F"
+                    width="350" height="340" id="mapContainer"></iframe>
+            </div>
+        </div>
+    </div>
+    
+  <footer class="footer-distributed">
+    <div class="footer-left">
+        <h3>Obs<span>Rouen</span></h3>
+        <p class="footer-links">
+            <a href="./index.html">Home</a>
+            ·
+            <a href="./liens.html">Liens</a>
+            ·
+            <a href="#">Mention Legale</a>
+
+            ·
+            <a href="./contact.html">Contact</a>
+        </p>
+        <p class="footer-company-name">Observatoire Rouen © 2015</p>
+    </div>
+  </footer>
+  <script src="./script.js"></script>
+</body>
+
+</html>

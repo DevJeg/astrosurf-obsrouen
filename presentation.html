@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<!-- METADATA -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bienvenue sur le site de l'Observatoire Astronomique de Rouen,
+    association animée uniquement par des bénévoles, reconnue d'intérêt général,
+    agréée Jeunesse et Education Populaire et soutenue par la Ville de Rouen.">
+    <title>Astrosurf</title>
+    <link rel="icon" type="image/png" href="./img/logo.png">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./presentation.css">
+    <link rel="stylesheet" href="./presentation_hist.css">
+    <link rel="stylesheet" href="./responsive_pres.css">
+    <script src="./script.js"></script>
+</head>
+
+<body>
+  <header id="header">
+        <div class="part" id="top">
+            <div id="top1">
+                <div class="onglet" onclick="location.href = './index.html';" id="logo"></div>
+                <div class="onglet" id="presentation" onclick="location.href='./presentation.html';">Observatoire</div>
+                <div class="onglet" onclick="location.href='./article.html';">Article</div>
+                <div class="onglet" onclick="location.href='./galerie.html';">Galerie</div>
+                <div class="onglet"  id="eventAstro" onclick="location.href='./event.html';">Evenements Astronomiques</div>
+            </div>
+            <div id="top2"><p id="titre"><b>Observatoire de Rouen</b></p></div>
+        </div>
+  </header> 
+  
+    <div class="part" id="bot">
+        <div id="nav">
+            <div class="onglet-nav onglet-actif" id="onglet-auj" onclick="change('onglet-auj','page-aujourdhui');">Aujourd'hui</div>
+            
+            <div class="onglet-nav" id="onglet-hist" onclick="change('onglet-hist','page-hist');">Histoire</div>
+
+            <div class="onglet-nav" id="onglet-membres" onclick="change('onglet-membres','page-membres');">Membres</div>
+        </div>
+        <div id="corps">  
+            <div class="page-nav" id="page-aujourdhui">
+                <img class="photo" src="img/presentation_ajd/equipeOBS.jpg" alt="photo du personnel de l'observatoire">
+                <div class="row">
+                    <div class="bigpart"> 
+                        <p>Les buts premiers de l'association (loi 1901) n'ont pas changé depuis sa création : ce sont la vulgarisation de l'Astronomie et l'étude scientifique des phénomènes célestes.</p>
+                        <p>Moyennant une modeste participation financière, nous recevons le public le premier samedi de chaque mois à partir de 21h30:  à cet effet, l'observatoire s'est doté d'un planétarium GOTO EX-3, outil pédagogique qui remporte un grand succès. Nous recevons également, avec participation financière, des groupes et classes de tous niveaux. Enfin l'Observatoire ouvre ses portes à l'occasion de phénomènes astronomiques exceptionnels : éclipses, comètes brillantes, nuit des étoiles etc.....</p>
+                        <p>Mais l'on peut également choisir de venir partager sa passion pour l'astronomie en devenant membre de l'Observatoire. Pour cela, il suffit de s'acquitter d'une cotisation annuelle de 35 € (tarif plein) ou 17,5 € (tarif réduit pour les scolaires et les étudiants). L'adhésion donne accès aux séances d'observation à Rouen et à la campagne, à la bibliothèque, à la réception du bulletin et aux différentes activités tous les samedis soir à partir de 21h30.</p>
+                        <p>Outre la lunette de 160 mm de diamètre, nous disposons de plusieurs instruments d'observation dont un télescope de 300mm de diamètre et un télescope Meade de 254 mm de diamètre (F/D=6,3) sur une monture Takahashi Temma EM 400 . Ce télescope Meade a été remplacé en 2019 par un télescope Célestron 11 de 280 mm de diamètre (F/D=10).  Le C.11est muni d'une caméra Atik 460 EX.</p>
+                    </div>
+                    <div class="smallpart">
+                        <img class="pic" src="img/presentation_ajd/obsajd2.jpg" alt="photo du personnel de l'observatoire">
+                        <p>Le télescope Célestron 11 sur sa monture Takahashi Temma EM 400</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="smallpart">
+                        <img class="pic" src="img/presentation_ajd/obsajd.jpg" alt="photo du personnel de l'observatoire">
+                    </div>
+                    <div class="bigpart">
+                        <p>Nous observons et photographions également le ciel profond à la campagne avec un télescope de 260mm de diamètre.</p>
+                        <p>L'Observatoire de Rouen est également lié à la Société Astronomique de France ( SAF ) puisqu'il est membre, correspondant régional et lauréat de cette société depuis de très nombreuses années. Plusieurs membres de l'Observatoire sont aussi lauréats de la SAF à titre individuel.</p>
+                        <p>Il y a une dizaine d'années, l'usage des caméras CCD et des webcam a révolutionné l'imagerie astronomique. Vous verrez sur ce site à la fois des images argentiques et électroniques, mais aussi quelques dessins. Ils ont tous été réalisés par des membres de l'Observatoire, avec les instruments de l'association ou leurs instruments personnels, à Rouen ou à partir d'autres lieux d'observation.</p></div>
+                </div>
+            </div>
+            <div class="page-nav" id="page-hist">
+                <h1>Cette page vous présente l'histoire de l'observatoire</h1>
+                <div class="row row2">
+                    <div class="leftside">
+                        <div>        
+                            L'observatoire Astronomique de Rouen a été fondé en 1884 à l'initiative de Ludovic Gully, professeur de Mathématiques à Rouen. Voici un <a target="_blank" href='./img/Histoire/journal1800.jpg'>extrait du journal de Rouen daté du 1er décembre 1884</a> et relatant cette fondation.<br><br>
+                            à gauche : Ludovic Gully et la lunette de 160 mm de l'Observatoire
+                    </div>
+                    </div>
+                    <div class="rightside">
+                        
+                        <img class="imghist" id="journalcrea" src="./img/Histoire/P1_lunette.jpg" alt="photo du personnel de l'observatoire">
+                    </div>
+                </div>
+                <div class="row row2">
+                    <div class="rightside">
+                        <img class="imghist" id="imgcomete" src="./img/Histoire/halley1910.jpg" alt="photo du personnel de l'observatoire">
+                    </div>
+                    <div class="leftside" id="secondrow">
+                        <div>
+                        
+                            Dès sa création, des observateurs talentueux comme M. Georges Caron, vice président de l'association qui possédait un observatoire personnel à Lillebonne, fixent sur la pellicule des phénomènes célestes exceptionnels comme le passage de la <u>comète de Halley</u> ou <u>l'éclipse perlée du 17 avril 1912</u><u>ou bien encore la comète Morehouse (1908c).</u>
+                        </div>
+                    </div>
+                </div>
+                <div class="row row2" id="rowimg">
+                    <img class="imghist imgtier" src="./img/Histoire/eclipse1912.jpg" alt="photo du personnel de l'observatoire">
+                    <img class="imghist imgtier" src="./img/Histoire/eclipse1912-2.jpg" alt="photo du personnel de l'observatoire">
+                    <img class="imghist imgtier" src="./img/Histoire/cometemorehouse.png" alt="photo du personnel de l'observatoire">
+                </div>
+                
+                <div class="row row2">
+                    <div class="leftside" id="rowdorothe">
+                        <div>
+                            Le membre le plus éminent de l'Observatoire, au moment de sa création, était sans conteste Dorothée Klumpke ( 1861-1942).<br>
+                            Citoyenne américaine, elle vécut 50 ans en France et fut la première femme à obtenir le titre de Docteur en Astronomie à la Sorbonne. Elle participa à l'élaboration de la carte du ciel et effectua des observations astronomiques en ballon. Elle aida beaucoup l'Observatoire Astronomique de Rouen par son soutien matériel et moral.<br>
+                            Le 17 août 1885, Ludovic Gully découvre, grâce à un télescope de 160 mm de diamètre que nous possédons encore, la supernova S Andromedae dans la galaxie d'Andromède.<br>
+                            En 1895, l'Observatoire acquiert notre lunette de 160mm grâce  à une souscription publique initiée par un membre actif, M. Bouis.<br>
+                            Le 31 mars 1901, l'Observatoire inaugure, en présence de Dorothée Klumpke, un nouveau télescope de 300 mm de diamètre. D'une taille considérable à l'époque pour un instrument d'amateur, ce télescope demeure pour nous un grand mystère, car aucun résultat photographique ou observationnel ne lui est attribué dans nos archives. On trouve une dernière mention le concernant dans un registre de 1929 qui le décrit comme "inutilisable et démonté".... A-t-il jamais servi un jour?<br>
+                            A la mort du vice président Caron en 1919, l'Observatoire hérite de l'astrographe double de ce dernier: ce sont les lunettes de 110 et 130mm actuellement exposées dans nos locaux.<br>
+                            Après la disparition en 1905 du fondateur Ludovic Gully, se succèdent à la présidence de l'Observatoire Messieurs: Delehaye (de 1905 à 1920), Salvignac (de 1920 à 1936), Adrien Métayer (de 1936 à 1952), Louis Lemarignier (de 1952 à 1955), Jean Lefebvre (de 1955 à 1963), Edgard Jouis (de 1963 à 1976), André Clastot (de 1976 à 1990) et Eric Mandon (à partir de 1990)                 
+                        </div>
+                    </div>
+                    <div class="rightside">
+                        <img class="imghist" id="dorothe" src="./img/Histoire/dorothee.jpg" alt="photo du personnel de l'observatoire">
+                    </div>
+                </div>
+                <div class="row row2" id="carouselintro">
+                    <h1>Voici un article de cette époque conservé dans les archives de l'Observatoire de Harvard aux Etats-Unis:</h1>
+                </div>
+                <section id="carouselsec">
+                    <div class="container">
+                        <div class="carousel">
+                            <input type="radio" name="slides" checked="checked" id="slide-1">
+                            <input type="radio" name="slides" id="slide-2">
+                            <input type="radio" name="slides" id="slide-3">
+                            <input type="radio" name="slides" id="slide-4">
+                            <input type="radio" name="slides" id="slide-5">
+                            <input type="radio" name="slides" id="slide-6">
+                            <input type="radio" name="slides" id="slide-7">
+                            <input type="radio" name="slides" id="slide-8">
+                            <input type="radio" name="slides" id="slide-9">
+                            <ul class="carousel__slides">
+                                <li class="carousel__slide">
+                                    <figure>
+                                        <div class="imgcontainer">
+                                            <img src="./img/Histoire/caron1.png" alt="photo du personnel de l'observatoire">
+                                        </div>
+                                        <figcaption>
+                                            Provided by the NASA Astrophysics Data System. 1902 
+                                            <span class="credit">John G. Wolbach Librury</span> 
+                                        </figcaption>
+                                    </figure>
+                                </li>
+                                <li class="carousel__slide">
+                                    <figure>
+                                        <div class="imgcontainer">
+                                            <img src="./img/Histoire/caron2.png" alt="photo du personnel de l'observatoire">
+                                        </div>
+                                        <figcaption>
+                                            Provided by the NASA Astrophysics Data System. 1902 
+                                            <span class="credit">John G. Wolbach Librury</span> 
+                                        </figcaption>
+                                    </figure>
+                                </li>
+                                <li class="carousel__slide">
+                                    <figure>
+                                        <div class="imgcontainer">
+                                            <img src="./img/Histoire/caron3.png" alt="photo du personnel de l'observatoire">
+                                        </div>
+                                        <figcaption>
+                                            Provided by the NASA Astrophysics Data System. 1902 
+                                            <span class="credit">John G. Wolbach Librury</span> 
+                                        </figcaption>
+                                    </figure>
+                                </li>
+                                <li class="carousel__slide">
+                                    <figure>
+                                        <div class="imgcontainer">
+                                            <img src="./img/Histoire/caron4.png" alt="photo du personnel de l'observatoire">
+                                        </div>
+                                        <figcaption>
+                                            Provided by the NASA Astrophysics Data System. 1902 
+                                            <span class="credit">John G. Wolbach Librury</span> 
+                                        </figcaption>
+                                    </figure>
+                                </li>
+                                <li class="carousel__slide">
+                                    <figure>
+                                        <div class="imgcontainer">
+                                            <img src="./img/Histoire/caron5.png" alt="photo du personnel de l'observatoire">
+                                        </div>
+                                        <figcaption>
+                                            Provided by the NASA Astrophysics Data System. 1902 
+                                            <span class="credit">John G. Wolbach Librury</span> 
+                                        </figcaption>
+                                    </figure>
+                                </li>
+                                <li class="carousel__slide">
+                                    <figure>
+                                        <div class="imgcontainer">
+                                            <img src="./img/Histoire/caron6.png" alt="photo du personnel de l'observatoire">
+                                        </div>
+                                        <figcaption>
+                                            Provided by the NASA Astrophysics Data System. 1902 
+                                            <span class="credit">John G. Wolbach Librury</span> 
+                                        </figcaption>
+                                    </figure>
+                                </li>
+                                <li class="carousel__slide">
+                                    <figure>
+                                        <div class="imgcontainer">
+                                            <img src="./img/Histoire/caron7.png" alt="photo du personnel de l'observatoire">
+                                        </div>
+                                        <figcaption>
+                                            Provided by the NASA Astrophysics Data System. 1902 
+                                            <span class="credit">John G. Wolbach Librury</span> 
+                                        </figcaption>
+                                    </figure>
+                                </li>
+                                <li class="carousel__slide">
+                                    <figure>
+                                        <div class="imgcontainer">
+                                            <img src="./img/Histoire/caron8.png" alt="photo du personnel de l'observatoire">
+                                        </div>
+                                        <figcaption>
+                                            Provided by the NASA Astrophysics Data System. 1902 
+                                            <span class="credit">John G. Wolbach Librury</span> 
+                                        </figcaption>
+                                    </figure>
+                                </li>
+                                <li class="carousel__slide">
+                                    <figure>
+                                        <div class="imgcontainer">
+                                            <img src="./img/Histoire/caron9.png" alt="photo du personnel de l'observatoire">
+                                        </div>
+                                        <figcaption>
+                                            Provided by the NASA Astrophysics Data System. 1902 
+                                            <span class="credit">John G. Wolbach Librury</span> 
+                                        </figcaption>
+                                    </figure>
+                                </li>
+                            </ul>    
+                            <ul class="carousel__thumbnails">
+                                <li>
+                                    <label for="slide-1"><img src="./img/Histoire/caron1.png"  alt="photo du personnel de l'observatoire"></label>
+                                </li>
+                                <li>
+                                    <label for="slide-2"><img src="./img/Histoire/caron2.png"  alt="photo du personnel de l'observatoire"></label>
+                                </li>
+                                <li>
+                                    <label for="slide-3"><img src="./img/Histoire/caron3.png"  alt="photo du personnel de l'observatoire"></label>
+                                </li>
+                                <li>
+                                    <label for="slide-4"><img src="./img/Histoire/caron4.png"  alt="photo du personnel de l'observatoire"></label>
+                                </li>
+                                <li>
+                                    <label for="slide-5"><img src="./img/Histoire/caron5.png"  alt="photo du personnel de l'observatoire"></label>
+                                </li>
+                                <li>
+                                    <label for="slide-6"><img src="./img/Histoire/caron6.png"  alt="photo du personnel de l'observatoire"></label>
+                                </li>
+                                 <li>
+                                    <label for="slide-7"><img src="./img/Histoire/caron7.png"  alt="photo du personnel de l'observatoire"></label>
+                                </li>
+                                <li>
+                                    <label for="slide-8"><img src="./img/Histoire/caron8.png"  alt="photo du personnel de l'observatoire"></label>
+                                </li>
+                                <li>
+                                    <label for="slide-9"><img src="./img/Histoire/caron9.png"  alt="photo du personnel de l'observatoire"></label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                
+            </div>
+            <div class="page-nav" id="page-membres">
+                <h1>Trombinoscope</h1>
+                <div id="team-body">
+
+<!-- Première ligne -->
+                    <div class="team-row">
+                        <div class="team-block">
+                            <div>
+                                <div class="phototeam" id="eric">
+                                    <div class="effet">Eric, notre Président, photographié près de son télescope de 260 mm de diamètre. Spécialiste du polissage des miroirs et de la photographie argentique, il est toujours partant pour des observations à la campagne.</div>
+                                </div>
+                            </div>
+                            <p class="prenom">Eric</p>
+                            <p class="poste">Président</p>
+                        </div>
+                        <div class="team-block">
+                            <div>
+                                <div class="phototeam" id="roger">
+                                    <div class="effet">Roger, notre Vice-Président. Grand bricoleur d'inventions astronomiques originales, il aime faire partager sa passion en toutes circonstances.</div>
+                                </div>
+                            </div>
+                            <p class="prenom">Roger</p>
+                            <p class="poste">Vice-Président</p> 
+                        </div>
+                        <div class="team-block">
+                            <div>
+                                <div class="phototeam" id="valere">
+                                    <div class="effet">Valère, notre autre Vice-Président. Il est intarissable dès qu'il s'agit d'animer les séances d'observations nocturnes du 1er samedi du mois. Spécialiste des images planétaires et lunaires, on le voit ici photographié à côté de son télescope de 250 mm de diamètre.</div>
+                                </div>
+                            </div>
+                            <p class="prenom">Valère</p>
+                            <p class="poste">Vice-Président</p>
+                        </div>
+                        <div class="team-block">
+                            <div>
+                                <div class="phototeam" id="jcd">
+                                    <div class="effet">Jean-Christophe observe le ciel grâce à un télescope Newton de 350 mm de diamètre et à une lunette FSQ 106 installés à poste fixe à la campagne. Astrophotographe hors pair et grand spécialiste du traitement d'images et de l'observation des exo-planètes.</div>
+                                </div>
+                            </div>
+                            <p class="prenom">Jean-Christophe</p>
+                            <p class="poste">Membre</p>
+                        </div>
+                    </div>
+                    
+<!-- Deuxième ligne -->
+                    <div class="team-row">  
+                        <div class="team-block">
+                            <div>
+                                <div class="phototeam" id="guy">
+                                    <div class="effet">Guy, notre Trésorier, photographié à côté du télescope de 254 mm de diamètre dont il a assuré l'installation.  Grand amateur de cosmologie, ne lui parlez surtout pas du Big Bang, il n'y croît plus depuis longtemps!</div>
+                                </div>
+                            </div>
+                            <p class="prenom">Guy</p>
+                            <p class="poste">Trésorier</p>
+                        </div>
+                        <div class="team-block">
+                            <div>
+                                <div class="phototeam" id="cecile">
+                                    <div class="effet">Cécile, notre bibliothécaire. Gare à vous si vous laissez traîner les revues n'importe où!</div>
+                                </div>
+                            </div>
+                            <p class="prenom">Cécile</p>
+                            <p class="poste">Bibliothécaire</p>
+                        </div>
+                        <div class="team-block">
+                            <div>
+                                <div class="phototeam" id="aymeric">
+                                    <div class="effet">Grâce à son Dobson de 400 mm de diamètre, Aymeric est un spécialiste des objets du ciel profond.</div>
+                                </div>
+                            </div>
+                            <p class="prenom">Aymeric</p>
+                            <p class="poste">Membre</p>
+                        </div>
+                        <div class="team-block">
+                            <div>
+                                <div class="phototeam" id="marwane">
+                                    <div class="effet">Marwane est expert en photographies et traitements d'images planétaires et lunaires grâce à son Maksutov de 127 mm de diamètre. Il est, avec Pascal, le Rédacteur en chef du bulletin de l'Observatoire.</div>
+                                </div>
+                            </div>
+                            <p class="prenom">Marwane</p>
+                            <p class="poste">Rédacteur</p>
+                        </div>
+                    </div>
+                    
+<!-- Troisième ligne -->
+                    <div class="team-row">
+                        <div class="team-block">
+                            <div>
+                                <div class="phototeam" id="pascal">
+                                    <div class="effet">Photographié derrière le télescope de 127mm de Marwane, Pascal, notre Secrétaire, est toujours partant pour animer les soirées publiques, observer à la campagne,améliorer les instruments de l'Observatoire ou préparer le bulletin de liaison.</div>
+                                </div>
+                            </div>
+                            <p class="prenom">Pascal</p>
+                            <p class="poste">Secrétaire</p>
+                        </div>
+                        <div class="team-block">
+                            <div>
+                                <div>
+                                    <div class="phototeam" id="jp">
+                                        <div class="effet">Lors de nos observations à la campagne, Jean-Paul nous montre de magnifiques images du ciel profond grâce à son téléscope Schmidt-Cassegrain de 254 mm de diamètre</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="prenom">Jean-Paul</p>
+                            <p class="poste">Membre</p>
+                        </div>
+                        <div class="team-block">
+                            <div>
+                                <div class="phototeam" id="christiane">
+                                    <div class="effet">Très active au niveau associatif et passionnée d'Astronomie, Christiane, notre bibliothécaire-adjointe, anime les soirées publiques et organise les visites de l'Observatoire par les Allemands dans le cadre du jumelage Rouen-Hanovre.</div>
+                                </div>
+                            </div>
+                            <p class="prenom">Christiane</p>
+                            <p class="poste">Adjointe-bibliothécaire</p>
+                        </div>
+                        <div class="team-block">
+                            <div>
+                                <div class="phototeam" id="daniel">
+                                    <div class="effet">Excellent animateur, Daniel aime recevoir le public et les scolaires. Il observe le ciel aux jumelles et grâce à un télescope de 115 mm de diamètre.</div>
+                                </div>
+                            </div>
+                            <p class="prenom">Daniel</p>
+                            <p class="poste">Animateur</p>
+                        </div>
+                    </div>
+
+<!-- Quatrième ligne -->
+                    <div class="team-row">
+                        <div class="team-block">
+                            <div>
+                                <div class="phototeam" id="michel">
+                                    <div class="effet">Photographié devant sa lunette 80 ED Orion, Michel réalise de magnifiques photographies du ciel profond à partir du centre-ville d'Evreux.</div>
+                                </div>
+                            </div>
+                            <p class="prenom">Michel</p>
+                            <p class="poste">Membre</p>
+                        </div>
+                        <div class="team-block">
+                            <div>
+                                <div class="phototeam" id="pascalb">
+                                    <div class="effet">Pascal , notre bibliothécaire, est toujours présent pour recevoir le public et les classes. Il est à l'origine de l'installation sur le toit de l'Observatoire de notre caméra de suivi des météorites dans le cadre du projet national "Fripon".</div>
+                                </div>
+                            </div>
+                            <p class="prenom">Pascal</p>
+                            <p class="poste">Bibliothécaire</p>
+                        </div>
+                        <div class="team-block">
+                            <div>
+                                <div class="phototeam" id="patrick">
+                                    <div class="effet">Patrick, notre trésorier adjoint, est l'un des animateurs les plus actifs de l'Observatoire. Il réalise, grâce à sa lunette de 140 mm de diamètre, de magnifiques photos des objets célestes à partir de son balcon en ville.</div>
+                                </div>
+                            </div>
+                            <p class="prenom">Patrick</p>
+                            <p class="poste">Trésorier-adjoint</p>
+                        </div>
+                        <div class="team-block">
+                            <div>
+                                <div class="phototeam" id="silhouette">
+                                    <div class="effet"></div>
+                                </div>
+                            </div>
+                            <p class="prenom">Peut-être bientôt vous...</p>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+        </div>
+    </div>
+
+  <footer class="footer-distributed">
+    <div class="footer-left">
+        <h3>OBS <span>Rouen</span></h3>
+        <p class="footer-links">
+            <a href="./index.html">Home</a>
+            ·
+            <a href="./liens.html">Liens</a>
+            ·
+            <a href="#">Mention Legale</a>
+
+            ·
+            <a href="./contact.html">Contact</a>
+        </p>
+        <p class="footer-company-name">Observatoire Rouen © 2015</p>
+    </div>
+
+  </footer>
+</body>
+
+
+</html>

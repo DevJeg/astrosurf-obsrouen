@@ -1,0 +1,17 @@
+@media (max-width: 1000px) {
+    .team-block{
+        width: 50%;
+    }
+    .block-row{
+        height: fit-content;
+        flex-wrap: wrap;
+    }
+    .block-block{
+        width: 275px;
+    }
+    
+  .block-plus{
+      display: none;
+    }
+    
+}
